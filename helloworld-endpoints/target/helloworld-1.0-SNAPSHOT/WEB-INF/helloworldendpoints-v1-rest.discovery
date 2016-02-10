@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"u_zXkMELIlX4ktyNbM2XKD4vK8E/BEfYUHNrXwk5JKU4IcrZJJ_X2pU\"",
+ "etag": "\"u_zXkMELIlX4ktyNbM2XKD4vK8E/xm86PiQm0rIjWGucBEPtZ_oXBns\"",
  "discoveryVersion": "v1",
  "id": "helloworldendpoints:v1",
  "name": "helloworldendpoints",
@@ -82,6 +82,34 @@
   }
  },
  "methods": {
+  "greetByAge": {
+   "id": "helloworldendpoints.greetByAge",
+   "path": "greetByAge",
+   "httpMethod": "GET",
+   "parameters": {
+    "age": {
+     "type": "integer",
+     "required": true,
+     "format": "int32",
+     "location": "query"
+    },
+    "name": {
+     "type": "string",
+     "required": true,
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "age",
+    "name"
+   ],
+   "response": {
+    "$ref": "HelloClass"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
   "greetByPeriod": {
    "id": "helloworldendpoints.greetByPeriod",
    "path": "greetByPeriod",

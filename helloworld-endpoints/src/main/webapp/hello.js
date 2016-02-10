@@ -36,6 +36,9 @@ function init() {
 function loadCallback () {	
 	// Enable the button actions
 	enableButtons ();
+	enableButt1 ();
+	enableButt2 ();
+	enableButt3 ();
 }
 
 function enableButtons () {
@@ -44,20 +47,31 @@ function enableButtons () {
 	btn.onclick= function(){greetGenerically();};
 	
 	// Update the button label now that the button is active
-	btn.value="Click me for a generic greeting";
+	btn.value="Click me for a generic greeting";}
+function enableButt1(){
+	
+
 	
 	// Set the onclick action for the second button
 	btn = document.getElementById("input_greet_by_name");
 	btn.onclick=function(){greetByName();};
 	
 	// Update the button label now that the button is active
-	btn.value="Click me for a personal greeting";
+	btn.value="Click me for a personal greeting";}
+	function enableButt2(){
+	
 	btn = document.getElementById("input_greet_by_period");
 	btn.onclick=function(){greetByPeriod();};
 	
 	// Update the button label now that the button is active
-	btn.value="Click me for period greeting";
-}
+	btn.value="Click me for period greeting";}
+	function enableButt3(){
+	btn = document.getElementById("input_greet_by_age");
+	btn.onclick=function(){greetByAge();};
+	
+	// Update the button label now that the button is active
+	btn.value="Click me for age greeting";}
+
 
 /*
  * Execute a request to the sayHello() endpoints function
@@ -95,6 +109,12 @@ function sayHelloCallback (response) {
 	var name = document.getElementById("name_field").value;
 	var period = document.getElementById("period_field").value; 
 	var request = gapi.client.helloworldendpoints.greetByPeriod({'name': name, 'period':period});
+	request.execute(sayHelloCallback);
+	}
+function greetByAge(){
+	var name = document.getElementById("name_field").value;
+	var period = document.getElementById("age_field").value; 
+	var request = gapi.client.helloworldendpoints.greetByAge({'name': name, 'age':age});
 	request.execute(sayHelloCallback);
 	}
 

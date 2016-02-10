@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;service&apos; to &apos;form&apos;" description="Move &apos;service&apos; to &apos;form&apos;" destination="src/main/java/com/google/devrel/training/conference/form" element1="src/main/java/com/google/devrel/training/conference/service" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1455100742340" updateReferences="true"/>
+</session>

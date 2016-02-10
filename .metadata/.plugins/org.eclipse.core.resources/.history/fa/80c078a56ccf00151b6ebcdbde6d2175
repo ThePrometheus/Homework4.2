@@ -1,0 +1,23 @@
+package com.google.training.helloworld;
+
+public class HelloClass {
+    public String message = "Hello World";
+
+    public HelloClass () {
+    }
+
+    public HelloClass (String name) {
+        this.message = "Hello " + name + "!";
+    }
+    public HelloClass(String name,int period){
+    	if(period>0&&period<12){
+    		this.message= "Good morning"+name;
+    	}if(period>12&&period<24){
+    		this.message= "good evening"+name;
+    	}
+    }
+
+    public String getMessage() {
+        return message;
+    }
+}

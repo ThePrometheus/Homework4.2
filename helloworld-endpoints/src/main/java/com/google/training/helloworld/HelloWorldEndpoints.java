@@ -35,5 +35,9 @@ public class HelloWorldEndpoints {
     public HelloClass greetByPeriod(@Named("name") String name,    @Named("period") String period){
     return new HelloClass(name,period);
     }
+    @ApiMethod(name ="greetByAge", path = "greetByAge", httpMethod = HttpMethod.GET)
+    public HelloClass greetByAge(@Named("name") String name,    @Named("age") int age){
+    return new HelloClass(name,age);
+    }
 
 }

@@ -16,6 +16,16 @@ public class HelloClass {
     		this.message= "good evening"+name;
     	}
     }
+    public HelloClass(String name,int age){
+    	if(age<0){
+    		this.message="Is not ture age";
+    	}if(age<40){
+    		this.message="Hi,bro";}
+    	else{
+    		this.message="Hello our old friend";}
+    	
+    	}
+    
 
     public String getMessage() {
         return message;
