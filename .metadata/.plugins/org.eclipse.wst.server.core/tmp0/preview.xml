@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="helloworld" name="helloworld-endpoints" path="D:/dev/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/helloworld-endpoints" type="j2ee"/>
+</server>
