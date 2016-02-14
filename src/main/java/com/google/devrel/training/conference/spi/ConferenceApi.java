@@ -87,7 +87,7 @@ public class ConferenceApi {
         // TODO 2
         // Get the userId and mainEmail
         userId=user.getUserId();
-        userId="3456";
+       
         mainEmail=user.getEmail();
 
         // TODO 2
